@@ -4,7 +4,7 @@ import pandas as pd
 from sqlalchemy import create_engine
 
 # Caminho do arquivo CSV
-df = pd.read_csv('data/IOT-temp.csv')  # Ajuste se necessário
+df = pd.read_csv('data/IOT-temp.csv')  
 print("Arquivo CSV carregado com sucesso!")  # Verificação de leitura do CSV
 
 # Conexão com o banco de dados PostgreSQL

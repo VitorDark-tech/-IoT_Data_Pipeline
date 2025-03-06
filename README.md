@@ -26,6 +26,7 @@ git clone https://github.com/VitorDark-tech/-IoT_Data_Pipeline.git
 cd -IoT_Data_Pipeline
 
 2. Criar Ambiente Virtual
+
 pip install virtualenv
 virtualenv venv
 venv\\Scripts\\activate  # Windows
@@ -69,13 +70,13 @@ Acesse o banco pelo DBeaver para validar os dados.
 Inicie o dashboard.py com Streamlit para visualizar os gráficos. 
 
 Visualizações(Capturas de Telas de Dashboard):
-### Gráfico de Média por Temperatura por Dispositivo
+### Gráfico de Média de Temperatura por Dispositivo
 ![Gráfico 01: Temperatura Por dispostivo](./img/Grafico01.png)
 
 ### Gráfico de Leituras por Hora
 ![Gráfico 02: Leituras por Hora](./img/Grafico02.png)
 
-### Gráfico de Temperatuuras Máximas e Mínimas
+### Gráfico de Temperaturas Máximas e Mínimas
 ![Gráfico 03: Temperaturas Máximas e Mínimas Por dia](./img/Grafico03.png)
 
 
