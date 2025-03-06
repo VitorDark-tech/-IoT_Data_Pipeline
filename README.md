@@ -83,6 +83,7 @@ Visualizações(Capturas de Telas de Dashboard):
 Views SQL e Propósitos
 
 1. Média de Temperatura por Dispositivo
+
 CREATE VIEW avg_temp_por_dispositivo AS 
 SELECT "room_id/id" AS device_id, AVG(temp) AS avg_temp 
 FROM temperature_readings 
@@ -91,6 +92,7 @@ GROUP BY device_id;
 Propósito: Essa view calcula a temperatura média registrada por cada dispositivo, permitindo análises comparativas entre diferentes sensores.
 
 2. Leituras por Hora
+
 CREATE VIEW leituras_por_hora AS 
 SELECT EXTRACT(HOUR FROM TO_TIMESTAMP(noted_date, 'DD-MM-YYYY HH24:MI')) AS hora, 
        COUNT(*) AS total_leituras 
@@ -101,6 +103,7 @@ ORDER BY hora;
 Propósito: Essa view contabiliza quantas leituras foram feitas por hora do dia, ajudando a identificar padrões de atividade dos dispositivos. 
 
 3. Temperaturas Máximas e Mínimas por Dia
+
 CREATE VIEW temp_max_min_por_dia AS 
 SELECT DATE(TO_TIMESTAMP(noted_date, 'DD-MM-YYYY HH24:MI')) AS data, 
        MAX(temp) AS temp_maxima, 
